@@ -4,6 +4,8 @@ const port = 3000
 const web = require('./routes/web')
 const dotenv = require('dotenv')
 const connectdb = require('./db/dbcon')
+const cors = require('cors')
+app.use(cors())
 //cookies 
 const cookieParser = require('cookie-parser')
 app.use(cookieParser())
